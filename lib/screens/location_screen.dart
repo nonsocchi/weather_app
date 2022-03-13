@@ -5,7 +5,7 @@ import 'package:clima_app/services/weather.dart';
 class LocationScreen extends StatefulWidget {
   const LocationScreen({Key? key, this.locationWeather}) : super(key: key);
 
-  final locationWeather;
+  final dynamic locationWeather;
 
   @override
   _LocationScreenState createState() => _LocationScreenState();
