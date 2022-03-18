@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:clima_app/utilities/constants.dart';
 import 'package:clima_app/services/weather.dart';
+import 'city_screen.dart';
 
 class LocationScreen extends StatefulWidget {
   const LocationScreen({Key? key, this.locationWeather}) : super(key: key);
@@ -67,7 +68,16 @@ class _LocationScreenState extends State<LocationScreen> {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () async {
+                      var typedName = await Navigator.of(context).push(
+                          MaterialPageRoute(
+                              builder: (ctx) => const CityScreen()));
+                      if (typedName != null) {
+                        var weatherData =
+                            await weather.getCityWeather(typedName);
+                        updateUI(weatherData);
+                      }
+                    },
                     child: const Icon(
                       Icons.location_city,
                       size: 50.0,
