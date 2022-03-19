@@ -23,6 +23,7 @@ This weather app is able to find out the live weather data in the current locati
 App designes made by [Olia Gozha](https://dribbble.com/shots/4663154-) on dribble.
 
 ### Finished App
+![Clima App demo gif](https://github.com/nonsocchi/weather_app/blob/master/images/clima-app-demo.gif)
 
 ### Learning Points
 - How to use Dart to perform asynchronous tasks.
