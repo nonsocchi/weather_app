@@ -17,8 +17,8 @@ This weather app is able to find out the live weather data in the current locati
   | :------------- | :------------- |
 | Android Studio Bumblebee  | 2021.1.1 Patch 2 |
 | Android Emulator  | Pixel 3 API 29 |
-| Flutter sdk | `2.8.1` |
-| Dart | `2.15.1` |
+| Flutter sdk | 2.8.1 |
+| Dart | 2.15.1 |
 
 App designes made by [Olia Gozha](https://dribbble.com/shots/4663154-) on dribble.
 
